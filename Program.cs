@@ -7,7 +7,7 @@ using EmailQueuePOC.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer("Server=COVSQLDEV5;Database=PRISM;User Id=PrismDbo;Password=rAnte9fa;MultipleActiveResultSets=True;TrustServerCertificate=True;"));
+    options.UseSqlServer(""));
 
 
 // Add Hangfire with SQLite storage
